@@ -6,12 +6,10 @@ describe('CommentFormComponent', () => {
   let component: CommentFormComponent;
   let fixture: ComponentFixture<CommentFormComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [CommentFormComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(CommentFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

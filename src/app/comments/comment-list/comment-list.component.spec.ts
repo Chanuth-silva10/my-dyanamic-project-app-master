@@ -6,12 +6,10 @@ describe('CommentListComponent', () => {
   let component: CommentListComponent;
   let fixture: ComponentFixture<CommentListComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [CommentListComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(CommentListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
