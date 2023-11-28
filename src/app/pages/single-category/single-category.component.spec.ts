@@ -6,12 +6,10 @@ describe('SingleCategoryComponent', () => {
   let component: SingleCategoryComponent;
   let fixture: ComponentFixture<SingleCategoryComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [SingleCategoryComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(SingleCategoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -6,12 +6,10 @@ describe('SinglePostComponent', () => {
   let component: SinglePostComponent;
   let fixture: ComponentFixture<SinglePostComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [SinglePostComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(SinglePostComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

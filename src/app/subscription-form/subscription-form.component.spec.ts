@@ -6,12 +6,10 @@ describe('SubscriptionFormComponent', () => {
   let component: SubscriptionFormComponent;
   let fixture: ComponentFixture<SubscriptionFormComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [SubscriptionFormComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(SubscriptionFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

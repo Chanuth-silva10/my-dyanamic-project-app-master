@@ -6,12 +6,10 @@ describe('TermsAndConditionComponent', () => {
   let component: TermsAndConditionComponent;
   let fixture: ComponentFixture<TermsAndConditionComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [TermsAndConditionComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(TermsAndConditionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
