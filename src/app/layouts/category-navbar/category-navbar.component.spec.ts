@@ -6,12 +6,10 @@ describe('CategoryNavbarComponent', () => {
   let component: CategoryNavbarComponent;
   let fixture: ComponentFixture<CategoryNavbarComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [CategoryNavbarComponent]
-    })
-    .compileComponents();
-    
+    });
     fixture = TestBed.createComponent(CategoryNavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
