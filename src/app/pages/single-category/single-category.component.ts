@@ -8,7 +8,10 @@ import { PostsService } from 'src/app/services/posts.service';
   styleUrls: ['./single-category.component.css'],
 })
 export class SingleCategoryComponent implements OnInit {
+
   postsArray!: Array<Object>;
+  categoryObj: any;
+
   constructor(
     private route: ActivatedRoute,
     private postService: PostsService
@@ -17,6 +20,7 @@ export class SingleCategoryComponent implements OnInit {
     this.route.params.subscribe((val) => {
       this.postService.loadCategoryPosts(val['id']).subscribe((post) => {
         this.postsArray = post;
+        this.categoryObj = val;
       });
     });
   }
