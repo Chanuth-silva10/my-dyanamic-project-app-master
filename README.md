@@ -28,5 +28,6 @@ ng test
 TypeScript
 HTML
 CSS
+Firebase Backend Service
 ```
 For more details, visit the repository: My Dynamic Project App `https://project-blogger-738ad.firebaseapp.com`
